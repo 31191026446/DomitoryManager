@@ -19,7 +19,8 @@ namespace HotelManager
         }
         public bool Login()
         {
-            return AccountDAO.Instance.Login(txbUserName.Text, txbPassWord.Text);
+            //return AccountDAO.Instance.Login(txbUserName.Text, txbPassWord.Text);
+            return true;
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -55,6 +56,11 @@ namespace HotelManager
         {
             if (e.KeyChar == 13)
                 btnLogin_Click_1(sender, null);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

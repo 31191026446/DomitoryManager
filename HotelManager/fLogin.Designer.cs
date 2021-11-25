@@ -96,12 +96,14 @@
             this.txbUserName.BorderColorIdle = System.Drawing.Color.SeaGreen;
             this.txbUserName.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.txbUserName.BorderThickness = 1;
+            this.txbUserName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbUserName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbUserName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbUserName.isPassword = false;
             this.txbUserName.Location = new System.Drawing.Point(332, 97);
             this.txbUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txbUserName.MaxLength = 32767;
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(370, 29);
             this.txbUserName.TabIndex = 0;
@@ -113,12 +115,14 @@
             this.txbPassWord.BorderColorIdle = System.Drawing.Color.SeaGreen;
             this.txbPassWord.BorderColorMouseHover = System.Drawing.Color.SeaGreen;
             this.txbPassWord.BorderThickness = 1;
+            this.txbPassWord.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txbPassWord.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbPassWord.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbPassWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbPassWord.isPassword = true;
             this.txbPassWord.Location = new System.Drawing.Point(332, 172);
             this.txbPassWord.Margin = new System.Windows.Forms.Padding(4);
+            this.txbPassWord.MaxLength = 32767;
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(370, 29);
             this.txbPassWord.TabIndex = 1;
@@ -157,6 +161,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btnClose
             // 
